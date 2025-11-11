@@ -1,0 +1,50 @@
+{
+    "name": "@lydio/megalodom",
+    "version": "3.0.0",
+    "homepage": "https://alexstevovich.com/a/lydio-megalodom-nodejs",
+    "author": {
+        "name": "Alex Stevovich",
+        "email": "dev@alexstevovich.com",
+        "url": "https://alexstevovich.com"
+    },
+    "description": "Complete production grade DOM for Lydio combining HTML, meta, schema, and layout fragments.",
+    "type": "module",
+    "main": "./src/index.js",
+    "files": [
+        "./src"
+    ],
+    "scripts": {
+        "poshify": "npx poshify",
+        "pretty": "npx prettier --write .",
+        "lint": "eslint ./src/",
+        "lint:fix": "eslint --fix ./src/",
+        "test": "npx vitest --run",
+        "build": "npm run poshify && npm run pretty && npm run lint:fix && npm run lint"
+    },
+    "keywords": [
+        "lydio",
+        "megalodom",
+        "html",
+        "meta-tags",
+        "schema",
+        "structured-html",
+        "seo",
+        "document",
+        "web-standards",
+        "semantic-html",
+        "html-builder"
+    ],
+    "dependencies": {
+        "@lydio/meta-tags": "^3.0.0",
+        "@lydio/schema": "^3.0.0",
+        "lydio": "^3.0.1"
+    },
+    "devDependencies": {
+        "eslint": "^9.36.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.4",
+        "poshify": "^1.0.0",
+        "prettier": "^3.6.2",
+        "vitest": "^3.2.4"
+    }
+}
