@@ -37,7 +37,7 @@ export class LydioMegalodomHtml extends lydio.Tag {
     }
 }
 
-export class LydioMegalodom extends lydio.Fragment {
+export class LydioMegalodomDom extends lydio.Fragment {
     constructor() {
         super();
         this.addDoctype();
@@ -88,5 +88,5 @@ export class LydioMegalodom extends lydio.Fragment {
     }
 }
 
-export { LydioMegalodom as Dom };
-export default LydioMegalodom;
+export { LydioMegalodomDom as Dom, LydioMegalodomHtml as Html };
+export default LydioMegalodomDom;
