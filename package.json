@@ -1,6 +1,6 @@
 {
     "name": "@lydio/megalodom",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "homepage": "https://alexstevovich.com/a/lydio-megalodom-nodejs",
     "author": {
         "name": "Alex Stevovich",
@@ -35,7 +35,7 @@
         "html-builder"
     ],
     "dependencies": {
-        "@lydio/meta-tags": "^3.0.0",
+        "@lydio/meta-tags": "^3.0.1",
         "@lydio/schema": "^3.0.0",
         "lydio": "^3.0.1"
     },
