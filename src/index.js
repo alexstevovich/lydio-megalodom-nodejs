@@ -88,4 +88,5 @@ export class LydioMegalodom extends lydio.Fragment {
     }
 }
 
+export { LydioMegalodom as Dom };
 export default LydioMegalodom;
