@@ -40,9 +40,9 @@ describe('@lydio/megalodom', () => {
     it('sets title, description, and canonical values via helper methods', () => {
         const doc = new LydioMegalodom();
 
-        doc.setTitle('Example Title');
-        doc.setDescription('A simple document test.');
-        doc.setCanonical('https://example.com/page');
+        doc.withTitle('Example Title');
+        doc.withDescription('A simple document test.');
+        doc.withCanonical('https://example.com/page');
 
         const html = doc.toHtml();
 
@@ -68,7 +68,7 @@ describe('@lydio/megalodom', () => {
             url: 'https://example.com',
         };
 
-        doc.addSchema(schemaData);
+        doc.withSchema(schemaData);
         const html = doc.toHtml();
 
         expect(html).toContain('"@context":"https://schema.org"');
@@ -110,10 +110,10 @@ describe('@lydio/megalodom', () => {
     it('allows chaining of setters and schema additions', () => {
         const doc = new LydioMegalodom();
 
-        doc.setTitle('Chain Test')
-            .setDescription('Chained calls test')
-            .setCanonical('https://chain.example.com')
-            .addSchema({
+        doc.withTitle('Chain Test')
+            .withDescription('Chained calls test')
+            .withCanonical('https://chain.example.com')
+            .withSchema({
                 '@context': 'https://schema.org',
                 '@type': 'Thing',
                 name: 'ChainTest',

@@ -69,20 +69,21 @@ export class LydioMegalodomDom extends lydio.Fragment {
         return this.html.body.main;
     }
 
-    setTitle(title) {
+    withTitle(title) {
         this.meta.setTitle(title);
         return this;
     }
-    setDescription(description) {
+
+    withDescription(description) {
         this.meta.setDescription(description);
         return this;
     }
-    setCanonical(canonicalUrl) {
+    withCanonical(canonicalUrl) {
         this.meta.setCanonical(canonicalUrl);
         return this;
     }
 
-    addSchema(schema) {
+    withSchema(schema) {
         this.schema.addSchema(schema);
         return this;
     }

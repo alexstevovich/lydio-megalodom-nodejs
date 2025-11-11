@@ -25,12 +25,12 @@ import LydioMegalodom from '@lydio/megalodom';
 
 const doc = new LydioMegalodom();
 
-doc.setTitle('Example Page');
-doc.setDescription('A fully generated HTML document built with Lydio.');
-doc.setCanonical('https://example.com');
+doc.withTitle('Example Page');
+doc.withDescription('A fully generated HTML document built with Lydio.');
+doc.withCanonical('https://example.com');
 
 // Add structured data schema
-doc.addSchema({
+doc.withSchema({
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Example Page',
